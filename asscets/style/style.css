@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,800;1,600&family=Open+Sans:ital,wght@0,500;1,500&display=swap');
+
+/* start common css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+::selection {
+    background-color: brown;
+    color: #fff;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.maun{
+    width: 100%; 
+    margin: 30px 0;
+    position: absolute;
+}
+/* start header section */
+
+.maun .container {
+    display: flex;
+    align-items: center;
+}
+.maun .logo {
+    font-size: 36px;  
+}
+.maun .list{
+    margin-left: auto;
+}
+.maun .list ul{
+    display: flex;
+}
+.maun .list ul li a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 30px;
+    transition: all ease .3s;
+    z-index: 1;
+}
+.maun .list ul li a:hover{
+    color: #cf0000;
+}
+
+.maun .list ul li a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #cf0000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all ease .3s;
+}
+.maun .list ul li a:hover::before {
+    width: 100%;
+}
+.maun .btn {
+    margin-left: 45px;
+}
+.maun .btn a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #cf0000;
+    color: #fff  
+} 
+/* start banner section  */
+.banner {
+    background-image: url(../imegs/bannar-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+.banner .container {
+    display: flex;
+}
+.banner .banner-text {
+    width: 50%;
+}
+.banner .banner-text span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #cf0000;
+}
+.banner .banner-text h1 {
+    font-size: 64px;
+    font-weight: 600;
+    text-shadow: 3px 3px pink;
+}
+.banner .banner-text strong {
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner .banner-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 30px;
+}
+.banner .banner-text ul {
+    display: flex;
+    margin-top: 30px; 
+}
+.banner .banner-text ul a {
+    color: #cf0000;
+    margin-right: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 22px;
+    transition: all ease .3s;
+}
+.banner .banner-text ul a:hover {
+    background-color: #cf0000;
+    color: #fff;
+}
+.banner .banner-img {
+    display: flex;
+}
+.banner .banner-img img {
+    display: block;
+    width: 300px;
+    height: 440px;
+    object-fit: cover;
+    margin-left: 272px;
+    transform: scale(1.2);
+}
+.banner .banner-img .number,
+.banner .banner-img .text-projects {
+    font-weight: 600;
+    color: #cf0000;
+    text-shadow: 2px 2px plum;
+}
